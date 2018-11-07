@@ -1,11 +1,16 @@
 {
   "dependencies": {
     "@types/express": "^4.16.0",
+    "@types/mongoose": "^5.3.1",
     "express": "^4.16.4",
+    "mongoose": "^5.3.10",
     "typescript": "^3.1.6"
   },
   "scripts": {
-    "start": "tsc && node build/index.js"
+    "start": "concurrently --kill-others \"tsc -w\" \"nodemon build/index.js\""
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.6"
+  }
 }
