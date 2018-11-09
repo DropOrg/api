@@ -10,6 +10,7 @@ export const UserSchema = new mongoose.Schema({
 	username: { type: String, required: true, isUnique: true},
 	name: { type: String, required: false },
 	projects: [{ type: String, required: true }],
+	password: {type: String, required: true, select: false},
 });
 
 export const User = mongoose.model('User', UserSchema);

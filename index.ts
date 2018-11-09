@@ -1,4 +1,5 @@
 import * as express from 'express';
+import * as bodyParser from 'body-parser';
 import * as mongoose from 'mongoose';
 
 import { api } from './src/drop';
@@ -14,6 +15,11 @@ db.on('error', () => {
 
 const app = express();
 const port: number = parseInt(process.env.PORT) || 3000;
+
+app.use(bodyParser.urlencoded({
+	extended: true,
+}));
+app.use(bodyParser.json());
 
 app.use("/", api);
 
