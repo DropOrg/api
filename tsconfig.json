@@ -1,7 +1,10 @@
 {
 	"compilerOptions" : {
 		"outDir": "./build",
-		"alwaysStrict": true
+		"alwaysStrict": true,
+		"lib": [
+			"es6",
+		]
 	},
 	"exclude": [
 		"build"

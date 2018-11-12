@@ -1,1 +1,0 @@
-export { IUser, UserSchema, User } from './users'
