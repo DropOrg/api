@@ -7,7 +7,7 @@ export interface IImage {
 	description: string,
 	public?: boolean,
 	permissions: Map<mongoose.Types.ObjectIdConstructor, Access>,	// Map User -> Access
-	// input: string,	// I'm thinking that the I/O spec could be optional to start with, just let whatever through and
+	// input: string,	// I'm thinking that the I/O spec could be scrapped to start with, just let whatever through and
 	// output: string,	// assume that the docklet will error when it receives badly formatted input.
 	persistent: boolean,
 }
