@@ -1,2 +1,2 @@
 export { IUser, UserSchema, User } from './users'
-export { IProject } from './projects'
+export { IDocklet, IProject, ProjectSchema, Project } from './projects'
