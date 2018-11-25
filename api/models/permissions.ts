@@ -5,3 +5,9 @@ export enum Access {
 	Manage,
 	Owner,
 }
+
+export enum AuthStrategy {
+	None,
+	Token,
+	UserPass,
+}
